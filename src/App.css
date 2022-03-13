@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  font-family: "Montserrat",sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.home-root{
+  background-image: url('images/nike_logo.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 8rem 0 8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-button{
+  border: none;
+  background-color: inherit;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out 0s;
+}
+.nav-button:hover{
+  border-bottom: 2px white solid;
+  transform:scale(1.1)
+}
+.home-info-div{
+
+  margin: 15rem 0 0 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+}
+.main-info{
+  font-size: 32px;
+  font-weight: bolder;
+}
+.little-info{
+  font-size: 20px;
+  font-weight: lighter;
+}
+.buy-button{
+  width: 10rem;
+  border:none;
+  background-color: white;
+  color: black;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.buy-button:hover{
+  background-color: rgb(230, 224, 224);
+}
+.buy-button:active{
+  background-color: black;
+  color: white;
+}
+.shop-bag{
+  width: 50px;
+  height: 50px;
 }
