@@ -155,7 +155,7 @@ body{
   width: 25vw;
   height: calc(100vh - 60px);
   background-color: white;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   display: flex;
@@ -178,6 +178,9 @@ body{
   height: 600px;
   overflow-y: scroll;
   
+}
+.card-grid.passive{
+  display: none;
 }
 .card-item{
   width: 350px;
@@ -256,7 +259,7 @@ body{
 }
 
 .empty-gray{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 75vw;

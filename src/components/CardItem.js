@@ -1,7 +1,7 @@
 import React from 'react';
 import '.././App.css';
 
-let CardItem = ({shoeimg, productName, price, countDown, countUp, purePrice, idx}) => {
+let CardItem = ({shoeimg, productName, price, countDown, countUp, purePrice, idx, howMany}) => {
 
 
     return  <div className='card-item'>
@@ -19,7 +19,7 @@ let CardItem = ({shoeimg, productName, price, countDown, countUp, purePrice, idx
             <button data-pure = {purePrice} id = {idx} onClick={countDown} className='count-down-button'>
                 -
             </button>
-            <div data-pure = {purePrice} id = {'how-many-'+idx} className='how-many'>1</div>
+            <div data-pure = {purePrice} id = {'how-many-'+idx} className='how-many'>{howMany}</div>
             <button data-pure = {purePrice} id = {idx} onClick={countUp} className='count-up-button'>
                 +
             </button>

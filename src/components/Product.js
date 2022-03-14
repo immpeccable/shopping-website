@@ -1,5 +1,5 @@
 import React from 'react';
-import uniqid from 'uniqid';
+
 
 let Product = ({shoeimg, productName, price, idx, addToCart, pricePure }) => {
 
