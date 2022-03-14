@@ -2,19 +2,21 @@ import React from 'react';
 import '.././App.css';
 import shopbag from ".././images/shopping-bag-bag-svgrepo-com.svg"
 
-let Header = () => {
+let Header = ({handleProductsClick, handleCardClick, currentPage, handleHomeClick}) => {
 
-    return <footer className='footer'>
-        <button className='nav-button'>
+
+
+    return <nav className='header'>
+        <button onClick={handleHomeClick} className='nav-button'>
             Home
         </button>
-        <button className='nav-button'>
+        <button onClick={handleProductsClick} className='nav-button'>
             Products
         </button>
-        <button className='nav-button'>
+        <button onClick={handleCardClick} className='nav-button'>
             <img className='shop-bag' src={shopbag} alt = "wtf is going on"></img>
         </button>
-    </footer>
+    </nav>
 }
 
 export default Header

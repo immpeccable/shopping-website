@@ -2,18 +2,24 @@ body{
   margin: 0;
   font-family: "Montserrat",sans-serif;
 }
+
 .home-root{
-  background-image: url('images/nike_logo.jpg');
+  background-image:  url('images/nike_logo.jpg');
   background-size: cover;
   width: 100vw;
   height: 100vh;
   color: white;
 }
 
-.footer{
+.header{
   display: flex;
   justify-content: space-between;
-  padding: 6rem 8rem 0 8rem;
+  padding: 0 8rem 0 8rem;
+  height: 15vh;
+  align-items: center;
+}
+.card.passive{
+  display: none;
 }
 
 .nav-button{
@@ -25,10 +31,17 @@ body{
   cursor: pointer;
   transition: transform 0.3s ease-in-out 0s;
 }
-.nav-button:hover{
+/*.nav-button.product{
+  color: black;
+}*/
+.nav-button:hover {
   border-bottom: 2px white solid;
   transform:scale(1.1)
 }
+/*.nav-button.product:hover{
+  border-bottom: 2px black solid;
+  transform:scale(1.1)
+}*/
 .home-info-div{
 
   margin: 15rem 0 0 8rem;
@@ -66,4 +79,203 @@ body{
 .shop-bag{
   width: 50px;
   height: 50px;
+}
+.products-root{
+  color: black;
+}
+.products-grid{
+  display: grid;
+  grid-auto-rows: 450px;
+  grid-auto-columns: 300px;
+  grid-template-rows: repeat(3,450);
+  grid-template-columns: repeat(3,350px);
+  column-gap: 60px;
+  row-gap: 60px;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.product-item{
+  
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(229, 229, 229);
+  gap: 7px;
+}
+
+.shoe-img{
+  width:350px;
+  height: 300px;
+  background-color: inherit;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.add-to-cart{
+  margin: 0 15px 0 15px;
+  border: none;
+  height: 45px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.add-to-cart:hover{
+  background-color: rgb(48, 46, 46);
+}
+.add-to-cart:active{
+  background-color: rgb(90, 88, 88);
+}
+.new-sale{
+  color: rgb(250, 84, 0);
+  padding-left: 15px;
+}
+.product-name{
+  font-size: 24px;
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.price{
+  padding-left: 15px;
+}
+
+.footer{
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ gap: 20px;
+ height: 7vh;
+ width: 100vw;
+ color:#e0dddd;
+ background-color: black;
+ 
+}
+
+.card{
+  width: 25vw;
+  height: calc(100vh - 60px);
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding-top: 60px;
+  gap: 30px;
+  
+}
+.main-text{
+  font-size: 32px;
+  font-weight: bolder;
+}
+.card-grid{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 400px;
+  height: 600px;
+  overflow-y: scroll;
+  
+}
+.card-item{
+  width: 350px;
+  height: 150px;
+  display: flex;
+}
+.card-item-right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-img{
+  width: 150px;
+  height: 150px;
+}
+.arrange-count{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+.how-many{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-up-button, .count-down-button{
+  border: none;
+  background-color: rgb(235, 235, 235);
+  width: 30px;
+  height: 30px;
+}
+.count-down-button:hover, .count-up-button:hover{
+  background-color: rgb(225, 225, 225);
+}
+.count-down-button:active, .count-up-button:active{
+  background-color: rgb(215, 215, 215);
+}
+
+.empty-gray.passive{
+  display: none;
+}
+
+.close-button, .checkout-button{
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.close-button{
+   background-color: rgb(255, 153, 153);
+}
+.close-button:hover{
+  background-color: rgb(230, 141, 141);
+}
+.close-button:active{
+  background-color: rgb(201, 124, 124);
+}
+.checkout-button{
+  background-color: rgb(70, 255, 211);
+}
+.checkout-button:hover{
+  background-color: rgb(38, 206, 167);
+}
+.checkout-button:active{
+  background-color: rgb(13, 153, 120);
+}
+.total-price{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.empty-gray{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.footer.home{
+  position: absolute;
+ bottom: 0;
+}
+
+
+
+.githubSvg{
+  transition: transform 0.15s ease-in-out 0s;
+}
+.githubSvg:hover{
+
+  transform: scale(1.3);
+  
 }
