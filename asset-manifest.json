@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-website/static/css/main.a847d8f8.css",
-    "main.js": "/shopping-website/static/js/main.04e1d101.js",
+    "main.js": "/shopping-website/static/js/main.843a1815.js",
     "static/media/nike_logo.jpg": "/shopping-website/static/media/nike_logo.4fc998601160b2e9d81f.jpg",
     "static/media/shoe1.webp": "/shopping-website/static/media/shoe1.0284f84ed286f65bd4b7.webp",
     "static/media/shoe5.webp": "/shopping-website/static/media/shoe5.ee4a55b382991446df7d.webp",
@@ -13,10 +13,10 @@
     "static/media/shopping-bag-bag-svgrepo-com.svg": "/shopping-website/static/media/shopping-bag-bag-svgrepo-com.48b74249165e266f7cad958dd514d9f7.svg",
     "index.html": "/shopping-website/index.html",
     "main.a847d8f8.css.map": "/shopping-website/static/css/main.a847d8f8.css.map",
-    "main.04e1d101.js.map": "/shopping-website/static/js/main.04e1d101.js.map"
+    "main.843a1815.js.map": "/shopping-website/static/js/main.843a1815.js.map"
   },
   "entrypoints": [
     "static/css/main.a847d8f8.css",
-    "static/js/main.04e1d101.js"
+    "static/js/main.843a1815.js"
   ]
 }
